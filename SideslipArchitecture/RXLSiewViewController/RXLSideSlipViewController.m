@@ -83,7 +83,9 @@
     
     //菜单试图变大动画设置：
     _menuViewControllerTransformation = CGAffineTransformMakeScale(1.5f, 1.5f);
-    
+    self.menuPrefersStatusBarHidden = NO;
+    self.menuPreferredStatusBarStyle = UIStatusBarStyleLightContent;
+
     //缩放主视图：
     _scaleContentView = YES;
     //缩放背景视图：

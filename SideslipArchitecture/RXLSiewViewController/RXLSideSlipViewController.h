@@ -63,13 +63,16 @@ __VA_ARGS__ \
 @property (assign, readwrite, nonatomic) BOOL panFromEdge;
 //滑动的阈值：
 @property (assign, readwrite, nonatomic) NSUInteger panMinimumOpenThreshold;
-//交互手势：
+//手势交互开启：
 @property (assign, readwrite, nonatomic) IBInspectable BOOL interactivePopGestureRecognizerEnabled;
 
 
 @property (assign, readwrite, nonatomic) IBInspectable BOOL fadeMenuView;
+//滑动时是否缩放主视图：
 @property (assign, readwrite, nonatomic) IBInspectable BOOL scaleContentView;
+//是否缩放背景视图：
 @property (assign, readwrite, nonatomic) IBInspectable BOOL scaleBackgroundImageView;
+//是否缩放菜单视图：
 @property (assign, readwrite, nonatomic) IBInspectable BOOL scaleMenuView;
 
 @property (assign, readwrite, nonatomic) IBInspectable BOOL contentViewShadowEnabled;
@@ -79,9 +82,12 @@ __VA_ARGS__ \
 @property (assign, readwrite, nonatomic) IBInspectable CGFloat contentViewShadowRadius;
 @property (assign, readwrite, nonatomic) IBInspectable CGFloat contentViewFadeOutAlpha;
 @property (assign, readwrite, nonatomic) IBInspectable CGFloat contentViewScaleValue;
+
+//横纵屏区分：
 @property (assign, readwrite, nonatomic) IBInspectable CGFloat contentViewInLandscapeOffsetCenterX;
 @property (assign, readwrite, nonatomic) IBInspectable CGFloat contentViewInPortraitOffsetCenterX;
 
+//动作视图时的参数设置（iOS7以后有效）
 @property (assign, readwrite, nonatomic) IBInspectable CGFloat parallaxMenuMinimumRelativeValue;
 @property (assign, readwrite, nonatomic) IBInspectable CGFloat parallaxMenuMaximumRelativeValue;
 @property (assign, readwrite, nonatomic) IBInspectable CGFloat parallaxContentMinimumRelativeValue;
@@ -90,8 +96,11 @@ __VA_ARGS__ \
 @property (assign, readwrite, nonatomic) CGAffineTransform menuViewControllerTransformation;
 @property (assign, readwrite, nonatomic) IBInspectable BOOL parallaxEnabled;
 @property (assign, readwrite, nonatomic) IBInspectable BOOL bouncesHorizontally;
+
+//当菜单打开后状态条statusBar的显示状态：
 @property (assign, readwrite, nonatomic) UIStatusBarStyle menuPreferredStatusBarStyle;
 @property (assign, readwrite, nonatomic) IBInspectable BOOL menuPrefersStatusBarHidden;
+
 
 - (id)initWithContentViewController:(UIViewController *)contentViewController
              leftMenuViewController:(UIViewController *)leftMenuViewController
