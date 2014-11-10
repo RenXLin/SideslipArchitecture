@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>121A21F8-4E41-4473-96D9-3C0898E861C8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SideslipArchitecture</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F87FB4A3EEFAC593A34CAA9F0E56193486805514</key>
+		<string>https://github.com/RenXLin/SideslipArchitecture.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SideslipArchitecture.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F87FB4A3EEFAC593A34CAA9F0E56193486805514</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RenXLin/SideslipArchitecture.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F87FB4A3EEFAC593A34CAA9F0E56193486805514</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F87FB4A3EEFAC593A34CAA9F0E56193486805514</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SideslipArchitecture</string>
+		</dict>
+	</array>
+</dict>
+</plist>
