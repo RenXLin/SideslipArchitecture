@@ -90,7 +90,7 @@
     //缩放主视图：
     _scaleContentView = YES;
     //缩放背景视图：
-    _scaleBackgroundImageView = YES;
+    _scaleBackgroundImageView = NO;
     //缩放菜单视图：
     _scaleMenuView = YES;
     //淡入淡出菜单视图：
@@ -109,7 +109,7 @@
     //开启滑动手指
     _panGestureEnabled = YES;
     //是否仅支持边沿滑动手势：
-    _panFromEdge = NO;
+    _panFromEdge = YES;
     //滑动后切换页面的阈值：
     _panMinimumOpenThreshold = 80.0;
     
@@ -858,7 +858,7 @@
     if (self.contentViewContainer.frame.origin.y > 10) {
             statusBarHidden = self.menuPrefersStatusBarHidden;
         } else {
-            statusBarHidden = self.contentViewController.prefersStatusBarHidden;
+//            statusBarHidden = self.contentViewController.prefersStatusBarHidden;
             statusBarHidden = self.contentPrefersStatusBarHidden;
         }
     );
