@@ -84,6 +84,7 @@
     //菜单试图变大动画设置：
     _menuViewControllerTransformation = CGAffineTransformMakeScale(1.5f, 1.5f);
     self.menuPrefersStatusBarHidden = NO;
+    self.contentPrefersStatusBarHidden = YES;
     self.menuPreferredStatusBarStyle = UIStatusBarStyleLightContent;
 
     //缩放主视图：
@@ -853,13 +854,14 @@
 {
     BOOL statusBarHidden = NO;
     IF_IOS7_OR_GREATER(
-                       statusBarHidden = self.visible ? self.menuPrefersStatusBarHidden : self.contentViewController.prefersStatusBarHidden;
-                       if (self.contentViewContainer.frame.origin.y > 10) {
-                           statusBarHidden = self.menuPrefersStatusBarHidden;
-                       } else {
-                           statusBarHidden = self.contentViewController.prefersStatusBarHidden;
-                       }
-                       );
+    statusBarHidden = self.visible ? self.menuPrefersStatusBarHidden : self.contentViewController.prefersStatusBarHidden;
+    if (self.contentViewContainer.frame.origin.y > 10) {
+            statusBarHidden = self.menuPrefersStatusBarHidden;
+        } else {
+            statusBarHidden = self.contentViewController.prefersStatusBarHidden;
+            statusBarHidden = self.contentPrefersStatusBarHidden;
+        }
+    );
     return statusBarHidden;
 }
 

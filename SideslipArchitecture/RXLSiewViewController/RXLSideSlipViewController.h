@@ -66,7 +66,7 @@ __VA_ARGS__ \
 //手势交互开启：
 @property (assign, readwrite, nonatomic) IBInspectable BOOL interactivePopGestureRecognizerEnabled;
 
-
+//菜单视图是否淡入淡出：
 @property (assign, readwrite, nonatomic) IBInspectable BOOL fadeMenuView;
 //滑动时是否缩放主视图：
 @property (assign, readwrite, nonatomic) IBInspectable BOOL scaleContentView;
@@ -100,6 +100,8 @@ __VA_ARGS__ \
 //当菜单打开后状态条statusBar的显示状态：
 @property (assign, readwrite, nonatomic) UIStatusBarStyle menuPreferredStatusBarStyle;
 @property (assign, readwrite, nonatomic) IBInspectable BOOL menuPrefersStatusBarHidden;
+//是否隐藏主视图的状态条：
+@property (assign, readwrite, nonatomic) IBInspectable BOOL contentPrefersStatusBarHidden;
 
 
 - (id)initWithContentViewController:(UIViewController *)contentViewController
